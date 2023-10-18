@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="TE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e82809348a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header" style="background: white;">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="header-text col-md-6">
+                        <p>Web Developer</p>
+                        <h1>Hi, I'm <span>Ali Nazir</span> <br> From Pakistan</h1>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <img id="image-1" src="images/pic1.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------------------------ about --------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="image-2" src="images/image2.jpg">
+                </div>
+                <div class="about-col-2" style="margin: 0px -81px 0px 0px;">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>
+                        Hello! I'm Ali Nazir, a passionate web developer from Pakistan.
+                        I'm new to the world of web development, eager to learn and create.
+                    </p>
+                    <br>
+                    <p>
+                        I'm dedicated to honing my skills in HTML, CSS, and JavaScript. 
+                        When not coding, I'm exploring design trends and enjoying the outdoors.
+                    </p>
+            
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Structure web pages using HTML elements.</li>
+                            <li><span>CSS</span><br>Style and layout web pages using CSS for a polished appearance.</li>
+                            <li><span>JavaScript</span><br>Basic understanding of JavaScript and DOM manipulation.</li>
+                            <li><span>Responsive Design</span><br>Design and develop websites that are accessible and look great across various devices and screen sizes.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>E-Commerce Website</span><br>I recently created a Clothing Store Website using HTML, CSS, JavaScript, and PHP.</li>
+                            <li><span>Space Themed Portfolio</span><br>I recently created a Space Themed Portfolio using HTML, CSS, and JavaScript, for a client on Upwork.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Present</span><br>Currently pursuing a Bachelors Degree in Software Engineering</li>
+                            <li><span>2021</span><br>Intermediate from Aga Khan Higher Secondary School.</li>
+                            <li><span>2019</span><br>Matriculation from SMS Aga Khan School.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------- services --------------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Custom Website Design</h2>
+                    <br>
+                    <p>Craft bespoke websites tailored to your client's unique brand, goals, and target audience.
+                         From concept to execution, create visually stunning and functional websites that leave a lasting impression.
+                    </p>
+                    <br>
+                    <a href="#"><button>Learn More</button></a>
+                </div>
+
+                <div>
+                    <h2>Responsive Web Design</h2>
+                    <br>
+                    <p>Develop websites that adapt seamlessly to various screen sizes and devices, 
+                        ensuring a consistent and enjoyable user experience. 
+                        Mobile responsiveness is crucial in today's digital landscape.
+                    </p>
+                    <a href="#"><button>Learn More</button></a>
+                </div>
+
+                <div>
+                    <h2>E-commerce Website Development</h2>
+                    <br>
+                    <p>Build secure and user-friendly e-commerce platforms that allow clients to showcase and sell their products or services online. 
+                        Implement smooth transaction processes and easy navigation.
+                    </p>
+                    <br>
+                    <a href="#"><button>Learn More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------------- portfolio ----------------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                    <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Car Rental System</h3>
+                    <p>I alongside my team created a Car Rental System in Java.
+                        The system provided users and admin functionalities.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Banking System</h3>
+                    <p>I alongside my team created a Banking System in Java.
+                        The system provided users with functionalities to create, update, and delete account.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Clothing Store Website</h3>
+                    <p>I am currently working on an e-commerce website. 
+                        The website offers a variety of clothing options, 
+                        option to create and login to account, and a secure payment gateway
+                        for customers.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!-- -------------------------- contact ------------------------------ -->
+
+<div id="contact">
+    <div class="container" style="margin: -50px 0px 0px 0px;">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> alinazir105@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 0324-2856635</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100005527687293"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/ANazir32"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/alinazir105/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ali-nazir-74b909275/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <a href="images/Ali Nazir.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ali. Made by Ali Nazir</p>
+    </div>
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx8aDeFWRqz_mu3RXCllWl1wgr7Djrkk-KBX49uZ7jA8fi4P91eJ8dul6iphll-0Vl4/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function(){
+                msg.innerHTML = "";
+            }, 5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
